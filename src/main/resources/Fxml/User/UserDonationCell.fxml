@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="50.0" prefWidth="350.0" styleClass="user_cell_container" stylesheets="@../../Styles/UsersCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <FontAwesomeIconView glyphName="MONEY" layoutX="14.0" layoutY="18.0" size="20" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="16.0" />
+    <HBox layoutX="59.0" prefHeight="40.0" prefWidth="350.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="5.0">
+        <Label fx:id="amount_lbl" layoutX="59.0" layoutY="10.0" prefHeight="22.0" prefWidth="83.0" text="RM 300.00" />
+        <Label fx:id="date_lbl" layoutX="196.0" layoutY="10.0" prefWidth="90.0" text="2023-03-28" />
+    </HBox>
+    <Label layoutX="699.0" layoutY="10.0" styleClass="success_lbl" text="SUCCESS" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+        <font>
+            <Font name="Bradley Hand ITC" size="12.0" />
+        </font>
+    </Label>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/AdminDashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wp.climateedu.ecowisdom.Controllers.Admin.DashboardController">
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name" text="Hi, Admin" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="Bernard MT Condensed" size="12.0" />
+      </font></Text>
+    <Label fx:id="login_date" styleClass="date_lbl" text="Today, 2023-11-20" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="27.0" />
+    <Text layoutX="744.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Overview" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+   <AnchorPane prefHeight="120.0" prefWidth="810.0" styleClass="overview_container" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="120.0">
+      <children>
+            <Label fx:id="user_count" graphicTextGap="20.0" minWidth="-Infinity" styleClass="account_balance" text="35" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+            <font>
+               <Font name="Rockwell Extra Bold" size="36.0" />
+            </font>
+            <graphic>
+               <FontAwesomeIconView glyphName="USER_ALT" />
+            </graphic>
+         </Label>
+         <Label fx:id="events_count" graphicTextGap="20.0" minWidth="-Infinity" styleClass="account_balance" text="35" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="10.0">
+            <font>
+               <Font name="Rockwell Extra Bold" size="36.0" />
+            </font>
+            <graphic>
+               <FontAwesomeIconView glyphName="HEART" />
+            </graphic>
+         </Label>
+         <Label fx:id="donation_amount" graphicTextGap="20.0" minWidth="-Infinity" styleClass="account_balance" text="RM3000.00" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="10.0">
+            <font>
+               <Font name="Rockwell Extra Bold" size="36.0" />
+            </font>
+            <graphic>
+               <FontAwesomeIconView glyphName="MONEY" />
+            </graphic>
+         </Label>
+         <Label layoutX="50.0" layoutY="74.0" text="Users Registered" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="70.0">
+            <font>
+               <Font name="Century Gothic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="60.0" layoutY="80.0" text="Events Organised" AnchorPane.leftAnchor="305.0" AnchorPane.topAnchor="70.0">
+            <font>
+               <Font name="Century Gothic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="70.0" layoutY="90.0" text="Donation Amount" AnchorPane.leftAnchor="560.0" AnchorPane.topAnchor="70.0">
+            <font>
+               <Font name="Century Gothic" size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+    <Text layoutX="20.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Search Events" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="270.0" />
+    <VBox layoutX="15.0" layoutY="138.0" prefHeight="420.0" prefWidth="810.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="300.0">
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="820.0" styleClass="search_box">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search Any Events:" />
+            <TextField fx:id="events_fld" />
+            <Button fx:id="search_btn" mnemonicParsing="false" text="Search">
+                <graphic>
+                    <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" />
+                </graphic>
+            </Button>
+        </HBox>
+        <ListView fx:id="events_listview" prefHeight="360.0" prefWidth="820.0" />
+    </VBox>
+</AnchorPane>

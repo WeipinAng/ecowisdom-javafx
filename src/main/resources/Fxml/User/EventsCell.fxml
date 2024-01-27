@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300.0" prefWidth="780.0" styleClass="event_cell_container" stylesheets="@../../Styles/EventsCell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <ImageView blendMode="MULTIPLY" fitHeight="300.0" fitWidth="780.0" mouseTransparent="true" opacity="0.5" pickOnBounds="true">
+        <Image url="@../../Images/events-backdrop.png" />
+    </ImageView>
+    <HBox layoutX="59.0" prefHeight="40.0" prefWidth="740.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
+        <Label fx:id="name_lbl" prefWidth="600.0" text="Coastal Conservation Volunteering in Madagascar">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font></Label>
+       <Label fx:id="date_lbl" styleClass="date_lbl" text="2023-09-23">
+           <font>
+               <Font name="Bradley Hand ITC" size="12.0" />
+           </font>
+       </Label>
+    </HBox>
+   <Text fx:id="detail_lbl" layoutX="20.0" layoutY="83.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This program offers three amazing opportunities. First, the chance to explore island and coastal biodiversity – including snorkelling in beautiful marine habitats. Second, the chance to contribute to conservation projects. And third, the opportunity to embrace the unique life found on remote research stations – exposure to new languages and insights, and access to beautiful natural parks." textAlignment="JUSTIFY" wrappingWidth="740.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="65.0" />
+    <ImageView fitHeight="130.0" fitWidth="780.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0">
+        <Image url="@../../Images/events-banner.jpg" />
+    </ImageView>
+</AnchorPane>

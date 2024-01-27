@@ -1,0 +1,95 @@
+.events_container {
+    -fx-background-color: #EEEEEE;
+}
+
+.events_container Text {
+    -fx-fill: #555555;
+    -fx-font-size: 1.8em;
+    -fx-font-family: "Calibri Light";
+    -fx-wrap-text: true;
+}
+
+.events_listview .column-header,
+.events_listview .column-header .filler,
+.events_listview .column-header-background .filler {
+    -fx-stroke: transparent;
+    -fx-size: 30;
+}
+
+.events_listview .table-column {
+    -fx-alignment: center-left;
+    -fx-padding: 8 15 8 15;
+}
+
+.events_listview .scroll-bar:horizontal .track,
+.events_listview .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: #FDBA74;
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+}
+
+.events_listview .scroll-bar:horizontal .thumb,
+.events_listview .scroll-bar:vertical .thumb {
+    -fx-background-color: #FED7AA;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+/*.search_box {*/
+/*    -fx-spacing: 15;*/
+/*    -fx-border-color: #AAAAAA;*/
+/*    -fx-border-width: 0 0 1 0;*/
+/*}*/
+
+.addevent_container {
+    -fx-background-color: #EEEEEE;
+    -fx-spacing: 15;
+}
+
+.addevent_container Text {
+    -fx-font-size: 1.1em;
+    -fx-fill: #888888;
+}
+
+.addevent_title {
+    -fx-font-size: 1.4em;
+    -fx-fill: #444444;
+}
+
+.addevent_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+.addevent_container TextField, DatePicker {
+    -fx-pref-width: 300;
+    -fx-pref-height: 40;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.addevent_container TextArea {
+    -fx-pref-width: 470;
+    -fx-pref-height: 80;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-padding: 5;
+}
+
+.addevent_container Button {
+    -fx-background-color: linear-gradient(to right, #132A13, #253F25);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-pref-width: 250;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+
+.addevent_container Button:hover {
+    -fx-cursor: hand;
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/UserDashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wp.climateedu.ecowisdom.Controllers.User.DashboardController">
+    <Text fx:id="full_name" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name" text="Hi, Weipin Ang" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="Bernard MT Condensed" size="12.0" />
+      </font></Text>
+    <Label fx:id="login_date" styleClass="date_lbl" text="Today, 2023-11-20" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="27.0">
+      <font>
+         <Font name="Stencil" size="12.0" />
+      </font></Label>
+    <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Donation Summary" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="90.0" />
+    <Text layoutX="744.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Latest Volunteering Event" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="90.0">
+      <font>
+         <Font name="Calibri" size="12.0" />
+      </font></Text>
+    <HBox layoutX="20.0" layoutY="119.0" prefHeight="220.0" prefWidth="615.0" styleClass="events_view" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="120.0">
+        <AnchorPane prefHeight="170.0" prefWidth="600.0">
+            <Text fx:id="event_title" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coastal Conservation Volunteering in Madagascar" />
+         <Label fx:id="event_detail" layoutX="14.0" layoutY="41.0" prefHeight="150.0" prefWidth="450.0" text="This program offers three amazing opportunities. First, the chance to explore island and coastal biodiversity – including snorkelling in beautiful marine habitats. Second, the chance to contribute to conservation projects. And third, the opportunity to embrace the unique life found on remote research stations – exposure to new languages and insights, and access to beautiful natural parks." textAlignment="JUSTIFY" wrapText="true">
+            <font>
+               <Font name="Castellar" size="14.0" />
+            </font>
+         </Label>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="486.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" styleClass="events_view">
+                <Image url="@../../Images/dashboard-logo.png" />
+            </ImageView>
+            <Label fx:id="event_date" layoutX="524.0" layoutY="15.0" text="2023-09-23">
+                <font>
+                    <Font name="Montserrat Regular" size="12.0" />
+                </font>
+            </Label>
+        </AnchorPane>
+    </HBox>
+    <VBox layoutX="735.0" layoutY="120.0" prefHeight="220.0" prefWidth="210.0" styleClass="summary_view" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="summary_container">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total Donation">
+            <font>
+               <Font name="Garamond" size="16.0" />
+            </font></Text>
+            <Label fx:id="total_donation_lbl" styleClass="total_donation_amount" text="RM500.00" />
+         <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../Images/donation-summary-logo.png" />
+            </image>
+         </ImageView>
+        </VBox>
+    </VBox>
+    <Text layoutX="25.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Introduction of App" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="366.6617193222046" />
+   <Label layoutX="25.0" layoutY="383.0" prefHeight="130.0" prefWidth="800.0" text="Welcome to our application, which is devoted to addressing the effects on flood in relation to Sustainable Development Goals 13. In order to mitigate the severe disruption that climate change and its effects cause to communities around the world, SDG13 places a strong emphasis on reducing environmental dangers like floods. In line with SDG 13 targets, the goal of this platform is to improve education, awareness-raising, and human and institutional capacity on climate change mitigation, adaptation, impact reduction, and early warning." textAlignment="JUSTIFY" wrapText="true" AnchorPane.leftAnchor="25.0">
+      <font>
+         <Font name="Bodoni MT" size="16.0" />
+      </font></Label>
+   <ImageView fitHeight="230.0" fitWidth="800.0" layoutX="25.0" layoutY="522.0" pickOnBounds="true" AnchorPane.leftAnchor="25.0">
+      <image>
+         <Image url="@../../Images/dashboard-flood.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="events_container" stylesheets="@../../Styles/EventsTable.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wp.climateedu.ecowisdom.Controllers.Admin.EventsTableController">
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="All Events" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+    <TableView fx:id="events_listview" layoutX="14.0" layoutY="53.0" prefHeight="400.0" prefWidth="800.0" styleClass="events_listview" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0">
+    </TableView>
+   <Text layoutX="30.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Event" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="490.0" />
+    <VBox fillWidth="false" layoutX="14.0" layoutY="36.0" prefHeight="200.0" prefWidth="300.0" styleClass="addevent_container" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="530.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Event Name:" />
+        <TextField fx:id="eventname_fld" />
+        <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Date:" />
+        <DatePicker fx:id="eventdate_fld" layoutX="10.0" layoutY="27.0" />
+    </VBox>
+    <VBox fillWidth="false" layoutX="30.0" layoutY="530.0" prefHeight="200.0" prefWidth="480.0" styleClass="addevent_container" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="530.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Event Detail:" />
+        <TextArea fx:id="eventdetail_fld" wrapText="true" />
+        <Button fx:id="addevent_btn" mnemonicParsing="false" text="Add Event" />
+    </VBox>
+</AnchorPane>

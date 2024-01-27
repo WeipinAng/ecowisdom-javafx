@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="donation_container" stylesheets="@../../Styles/Donation.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wp.climateedu.ecowisdom.Controllers.User.DonationController">
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make New Donation" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+    <ListView fx:id="donation_listview" layoutX="14.0" layoutY="53.0" prefHeight="650.0" prefWidth="450.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+   <Text layoutX="380.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Past Donation" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="20.0" />
+   <VBox layoutX="20.0" layoutY="60.0" prefHeight="350.0" prefWidth="320.0" styleClass="new_donation_container" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="45.0">
+       <Label text="Username" />
+       <Label fx:id="username_lbl" styleClass="username_lbl" />
+       <Label layoutX="10.0" layoutY="10.0" text="Amount in RM" />
+       <TextField fx:id="amount_fld" layoutX="10.0" layoutY="27.0" />
+       <Label layoutX="10.0" layoutY="10.0" text="Transaction Date" />
+       <Label fx:id="date_lbl" prefHeight="70.0" prefWidth="200.0" styleClass="date_lbl" />
+       <Button fx:id="donate_btn" mnemonicParsing="false" text="Donate" />
+   </VBox>
+   <ImageView fitHeight="95.0" fitWidth="91.0" layoutX="20.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../Images/donation-logo.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="111.0" layoutY="390.0" prefHeight="40.0" prefWidth="239.0" text="Your Donation Matters!" wrapText="true">
+      <font>
+         <Font name="Magneto Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="111.0" layoutY="421.0" prefHeight="73.0" prefWidth="215.0" text="🌍 Join the Movement for a Greener Tomorrow!" wrapText="true">
+      <font>
+         <Font name="Mistral" size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="30.0" layoutY="502.0" prefWidth="300.0" text="💚  Education and Advocacy" textAlignment="JUSTIFY" wrapText="true" />
+   <Label layoutX="30.0" layoutY="601.0" prefWidth="300.0" text="🌱  Together, We Can Make a Difference:" textAlignment="JUSTIFY" wrapText="true" />
+   <Label layoutX="30.0" layoutY="526.0" prefWidth="300.0" text="Spread awareness and advocate for climate action. Your support can fund educational campaigns that empower individuals to make environmentally conscious choices and influence policy changes at all levels." textAlignment="JUSTIFY" wrapText="true" />
+   <Label layoutX="30.0" layoutY="625.0" prefWidth="300.0" text="Every dollar you donate is a step toward a sustainable and resilient future. Your support is a powerful force for positive change. Imagine the impact we can create together!" textAlignment="JUSTIFY" wrapText="true" />
+</AnchorPane>

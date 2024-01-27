@@ -1,0 +1,54 @@
+.donation_container Text {
+    -fx-fill: #555555;
+    -fx-font-size: 1.8em;
+    -fx-font-family: "Calibri Light";
+}
+
+.donation_container .list-view {
+    -fx-border-width: 0;
+}
+
+.donation_container .list-cell {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 10 0 10 0;
+}
+
+.new_donation_container {
+    -fx-padding: 20 10 20 10;
+    -fx-spacing: 15;
+}
+
+.new_donation_container Label {
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.3em;
+}
+
+.new_donation_container TextField {
+    -fx-pref-height: 40;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.username_lbl, .date_lbl {
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+    -fx-padding: 5;
+    -fx-background-color: #888888;
+    -fx-background-radius: 5;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.new_donation_container Button {
+    -fx-background-color: linear-gradient(to right, #132A13, #253F25);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-pref-width: 230;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+
+.new_donation_container Button:hover {
+    -fx-cursor: hand;
+}
